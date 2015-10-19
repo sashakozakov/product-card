@@ -26,12 +26,6 @@
 .icon-star:before {
 	content: "\f005";
 }
-.icon-angle-left:before {
-	content: "\f104";
-}
-.icon-angle-right:before {
-	content: "\f105";
-}
 .icon-angle-up:before {
 	content: "\f106";
 }

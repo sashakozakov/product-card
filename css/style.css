@@ -93,23 +93,37 @@ textarea {
 
 }
 .ba-product {
-	padding: 45px 40px;
+	padding: 35px 40px;
 }
 
 .slick-initialized .slick-slide {
 	outline: none;
 }
 .slick-prev:before, .slick-next:before {
-	color: #130000;
+display: inline-block;
+    height: 11px;
+    width: 6px;
+    background: url("../img/swipe.png") 0 0 no-repeat;
+    opacity: .5;
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-next:before {
+    background-position: 0 -11px;
 }
 .slick-prev {
-	left: 45%;
+	left: 50%;
+margin-left: -40px;
 }
 .slick-next {
 	left: 55%;
 }
 .slick-prev, .slick-next {
 	top: 100%;
+	margin-top: 10px;
 }
 .slick-dots {
 	bottom: -75px;
@@ -219,7 +233,16 @@ float: right;
 .ba-product__variations input {
 	display: none;
 }
+.ba-product__overcosts {
+    margin: 0;
+    font-size: 12px;
+    color: #aeb2b4;
+}
 
+
+.ba-product__add-to-card {
+padding-top: 39px;
+}
 .ba-product__qty {
 	font-size: 13px;
 position: relative;
@@ -237,7 +260,7 @@ position: relative;
 }
 
 .ba-product__qty-down{
-	margin-top: 10px;
+	margin-top: 25px;
 }
 .ba-product__qty-down,
 .ba-product__qty-up {
@@ -260,6 +283,7 @@ position: relative;
 	font-size: 17px;
 	padding: 10px 30px;
 	letter-spacing: .5px;
+margin-right: 30px;
 }
 .ba-button:hover {
 	background-color: #3A54E5;
